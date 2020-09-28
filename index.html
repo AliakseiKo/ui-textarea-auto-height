@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ui-text-area-auto-height</title>
+  <link rel="stylesheet" href="./textAreaAutoHeight.css">
+  <style>
+    .message {
+      /* box-sizing: border-box; */
+      padding: 5px;
+      border: 2px solid black;
+
+      outline: none;
+      resize: none;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <textarea class="message"></textarea>
+
+  <script src="./textAreaAutoHeight.js"></script>
+
+  <script>
+    const textArea = document.querySelector('.message');
+    textAreaAutoHeight(textArea, 2, 10);
+  </script>
+</body>
+</html>
